@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+
+
+router.get('/check',(req,res)=>{
+res.send("checking here")
+});
+
+
+module.exports = router;
