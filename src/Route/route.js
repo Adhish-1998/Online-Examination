@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const adminController = require("../Controller/adminController")
+const {createAdmin,adminLogin}= adminController
 
 
-router.get('/check',(req,res)=>{
-res.send("checking here")
-});
+router.post('/createAdmin',createAdmin)
+router.post('/login',adminLogin)
 
 
 module.exports = router;

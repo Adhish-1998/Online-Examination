@@ -3,6 +3,7 @@ const mongoose = require ('mongoose');
 const route = require('./Route/route')
 
 const app = express();
+app.use(express.json())
 mongoose.set('strictQuery', true);
 
 mongoose.connect("mongodb+srv://vikram2211:niI4v8Tkxl2drjiN@cluster0.iufwb.mongodb.net/online-exam",{
